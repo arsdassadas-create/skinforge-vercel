@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("skinforge-bot")
 
 # Store secrets in Render > Environment. Never put tokens in this file.
-BOT_TOKEN = (os.environ.get("8955553619:AAEav3ERKNmTUtygHzqfWW4LazWmiMDKbow") or os.environ.get("TELEGRAM_BOT_TOKEN") or "").strip()
+BOT_TOKEN = (os.environ.get("8955553619:AAFEWkgbftYaAV6FoXRT2l2rQmkSYfNJMzU") or os.environ.get("TELEGRAM_BOT_TOKEN") or "").strip()
 ADMIN_CHAT_ID = (os.environ.get("8998213268") or os.environ.get("TELEGRAM_ADMIN_CHAT_ID") or "").strip()
 SKINFORGE_API_SECRET = os.environ.get("SKINFORGE_API_SECRET", "").strip()
 
