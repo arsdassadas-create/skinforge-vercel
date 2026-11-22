@@ -6,8 +6,8 @@ from flask_cors import CORS
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = os.environ.get("8955553619:AAEav3ERKNmTUtygHzqfWW4LazWmiMDKbow", "")
-ADMIN_CHAT_ID = os.environ.get("8998213268", "")
+BOT_TOKEN = (os.environ.get("BOT_TOKEN") or "8955553619:AAEav3ERKNmTUtygHzqfWW4LazWmiMDKbow").strip()
+ADMIN_CHAT_ID = (os.environ.get("ADMIN_CHAT_ID") or "8998213268").strip()
 
 if not BOT_TOKEN:
     raise RuntimeError("Не задан BOT_TOKEN в Environment Variables")
