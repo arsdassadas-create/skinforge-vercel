@@ -3475,7 +3475,7 @@ function setWheelPointerAngle(degrees, transition = 'none') {
 }
 
 const MULTIPLIER_VALUES = [2, 3, 5, 10, 25];
-const HOUSE_RETURN = 0.86; // Restored original chance formula: 86% return factor divided by the exact target/stake ratio.
+const HOUSE_RETURN = 0.99; // Restored original chance formula: 86% return factor divided by the exact target/stake ratio.
 const MULTIPLIER_ODDS = Object.fromEntries(MULTIPLIER_VALUES.map(multiplier => {
   const chance = HOUSE_RETURN / multiplier;
   const percent = chance * 100;
